@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: #581845;
+    width: 100%;
+    color: #fff;
+    font-size: 25px;
+    padding: 15px;
+}
+
+header h1{
+    border: 1px solid;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.secciones{
+    
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+.secciones div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.secciones section{
+    width: 31%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.secciones .se1 {
+    background: #C70039;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.secciones .se2{
+    background: #FF5733;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.secciones .se3{
+    background: #FFC300;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgb(82, 82, 82);
+}
+
+.secciones section h2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.secciones section p{
+    line-height: 23px;
+    font-size: 18px;
+    padding: 18px;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.formulario div{
+    display: block;
+}
+
+.formulario div h3{
+    font-size: 35px;
+    font-family: 'inter', sans-serif;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.formulario div form{
+    box-shadow: 1px 3px 6px #3d3d3d;
+    width: 450px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.formulario div form .elementos{
+    display: block;
+
+}
+.formulario div form .elementos input,
+.formulario div form .elementos textarea{
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border: 1px solid #979797;
+}
+
+.formulario div form .enviar{
+    border: none;
+    padding: 15px;
+    width: 45%;
+    background: #C70039;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 7px;
+    justify-content: right;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.formulario div form .enviar:hover{
+    background: #FF5733;
+}
+.formulario div form .Envi{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+
+.formulario div form #respuesta{
+    margin-bottom: 7px;
+    color: red;
+    font-weight: 800;
+    
+}
+
+@media screen and (max-width: 880px){
+    .secciones{
+        display: flex;
+        justify-content: center;
+    }
+    .secciones div{
+        display: block
+    }
+    .secciones section{
+        width: 350px;
+        margin-bottom: 30px;
+    }
+}

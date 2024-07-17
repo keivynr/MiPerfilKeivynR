@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mi Perfil</title>
+</head>
+<body>
+    <header>
+        <h1>Mi Perfil</h1>
+    </header>
+    <div class="secciones">
+        <div>
+            <section class="se1">
+            <h2>Sobre Mi</h2>
+            <p>Mi nombre es Keivyn Rodríguez, tengo 21 años soy estudiante del IUTA
+                y actualmente me encuentro trabajando en una empresa de publicidad 
+                exterior, quiero lograr tener un buen futuro y ser una persona 
+                bastante ejemplar para los que me rodean.</p>
+        </section>
+        <section class="se2">
+            <h2>Experiencia</h2>
+            <p>Poco a poco he ido aprendiendo de la carrera que elegí estudiar y
+                dedicarme a eso, espero llegar a grandes cosas con ella </p>
+        </section>
+        <section class="se3">
+            <h2>Educacion</h2>
+            <p>Actualmente estoy por culminar el 6to cuatrimestre de la carrera 
+                informatica y cada día más ansioso de llegar a la meta</p>
+        </section>
+        </div>
+        
+    </div>
+    <section class="formulario">
+        <div>
+            <h3>Formulario de Contacto</h3>
+            <form id="myForm" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                <div class="elementos">
+                    <div>
+                       <label for="">Nombres:</label>
+                        <input type="text" id="Nombre" onblur="Vacio(this)"> 
+                    </div>
+                    <div>
+                        <label for="">Correo:</label>
+                        <input type="email" name="" id="Correo" onblur="validarEmail()">
+                    </div>
+                    <div>
+                        <label for="">Mensaje:</label>
+                        <textarea name="" id="Mensaje"></textarea>
+                    </div>
+                    
+                </div>
+                <div>
+                    <span id="respuesta"></span>
+                </div>
+                <div class="Envi">
+                    <input type="submit" class="enviar" value="Enviar">
+                </div>
+                
+                
+            </form>
+        </div>
+        
+    </section>
+    <script src="/script.js"></script>
+</body>
+</html>
